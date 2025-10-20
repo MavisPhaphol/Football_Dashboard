@@ -1,2 +1,3 @@
-playerID, passPercentage, completions, attempts, rushingAttempts, rushingYards, passingTD, rushingTD, catches, targets, recievingYards, recievingTD
+playerID, gamesPlayed, passPercentage, completions, attempts, rushingAttempts, rushingYards, passingTD, rushingTD, catches, targets, recievingYards, recievingTD
+
 
