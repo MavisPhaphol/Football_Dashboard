@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>LSU Tigers Offensive Stats</title>
 </head>
 <body>
     <div class="navigation bar"> <!-- top of the page -->
         <p>College Football Dashboard</p>
-        <a href="index.html"class="left">College Football Dashboard</a>
-        <a href="tennessee.html" class="right">Tennessee</a>
-        <a href="lsu.html" class="right">LSU</a>
-        <a href="georgia.html"class="right">Georgia</a>
-        <a href="houston.html" class="right">Houston</a>
-        <a href="ohioState.html " class="right">Ohio State</a>
+        <a href="{{ url_for('dashboard') }}"class="left">College Football Dashboard</a>
+        <a href="{{ url_for('tennessee') }}" class="right">Tennessee</a>
+        <a href="{{ url_for('lsu') }}" class="right">LSU</a>
+        <a href="{{ url_for('georgia') }}"class="right">Georgia</a>
+        <a href="{{ url_for('houston') }}" class="right">Houston</a>
+        <a href="{{ url_for('ohioState') }}" class="right">Ohio State</a>
     </div>
     <div class="team list"> <!-- middle page includes team image on left upper middle, players statistics on the right side, under shows top rushing, recieving performances -->
     </div>
     <div class="footer"> <!-- bottom page includes hyperlinks to go to other teams -->
         <ul>
-            <li><a href="ohioState.html " class="left">Ohio State Buckeyes</a></li>
-            <li><a href="houston.html" class="left">Houston Cougars</a></li>
-            <li><a href="georgia.html" class="left">Georgia Bulldogs</a></li>
-            <li><a href="lsu.html"class="left">LSU Tigers</a></li>
-            <li><a href="tennessee.html"class="left">Tennessee Volunteers</a></li>
+            <li><a href="{{ url_for('ohioState') }}" class="left">Ohio State Buckeyes</a></li>
+            <li><a href="{{ url_for('houston') }}" class="left">Houston Cougars</a></li>
+            <li><a href="{{ url_for('georgia') }}" class="left">Georgia Bulldogs</a></li>
+            <li><a href="{{ url_for('lsu') }}"class="left">LSU Tigers</a></li>
+            <li><a href="{{ url_for('tennessee') }}"class="left">Tennessee Volunteers</a></li>
         </ul>
         <p class="right">Created by: Mavis Phaphol</p>
     </div>

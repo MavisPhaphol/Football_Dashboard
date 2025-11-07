@@ -1,0 +1,34 @@
+/* ---------- GENERAL PAGE LAYOUT ---------- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #003366;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  text-align: center;
+  background-color: #004080;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
