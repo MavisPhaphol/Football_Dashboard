@@ -17,7 +17,26 @@
         <a href="{{ url_for('ohioState') }}" class="right">Ohio State</a>
     </div>
     <div class="team list"> <!-- middle page includes team image and name to click on -->
-        
+        <div class="Ohio State Buckeyes">
+            <a href="{{ url_for('ohioState') }}"><img src="{{ url_for('static', filename='images/ohioStateLogo.png') }}" alt="Ohio State Logo" width="120" height="120"></a>
+            <h3>Ohio State Buckeyes</h3>
+        </div>
+        <div class="Houston Cougars">
+            <a href="{{ url_for('houston') }}"><img src="{{ url_for('static', filename='images/houstonUniversityLogo.png') }}" alt="Houston Logo" width="120" height="120"></a>
+            <h3>Houston Cougars</h3>
+        </div>
+        <div class="Georgia Bulldogs">
+            <a href="{{ url_for('georgia') }}"><img src="{{ url_for('static', filename='images/UGALogo.png') }}" alt="Georgia Logo" width="120" height="120"></a>
+            <h3>Georgia Bulldogs</h3>
+        </div>
+        <div class="LSU Tigers">
+            <a href="{{ url_for('lsu') }}"><img src="{{ url_for('static', filename='images/LSULogo.png') }}" alt="LSU Logo" width="120" height="120"></a>
+            <h3>LSU Tigers</h3>
+        </div>
+        <div class="Tennessee Volunteers">
+            <a href="{{ url_for('tennessee') }}"><img src="{{ url_for('static', filename='images/tennesseeLogo.png') }}" alt="Tennessee Logo" width="120" height="120"></a>
+            <h3>Tennessee Volunteers</h3>
+        </div>
     </div>
     <div class="footer"> <!-- bottom page includes hyperlinks to go to other teams -->
         <ul>
