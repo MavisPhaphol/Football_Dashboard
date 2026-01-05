@@ -1,14 +1,14 @@
 /* ---------- GENERAL PAGE LAYOUT ---------- */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #003366;
+  font-family: Impact, Arial, sans-serif;
+  background-color: #4C5C70;
   margin: 0;
   padding: 0;
   color: #222;
 }
 
 header {
-  background-color: #003366;
+  background-color: #5E708A;
   color: white;
   text-align: center;
   padding: 1.5rem 0;
@@ -24,11 +24,24 @@ main {
 }
 
 /* ---------- NAVIGATION ---------- */
-nav {
-  text-align: center;
-  background-color: #004080;
-  padding: 0.8rem;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  float: left;
 }
 
-nav a {
-  color: white;
+ul li a {
+  display: block;
+  color: #FFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #2B5F87;
+}

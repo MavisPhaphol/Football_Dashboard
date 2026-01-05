@@ -9,12 +9,14 @@
 </head>
 <body>
     <div class="navigation bar"> <!-- top of the page -->
-        <a href="{{ url_for('dashboard') }}"class="left">College Football Dashboard</a>
-        <a href="{{ url_for('tennessee') }}" class="right">Tennessee</a>
-        <a href="{{ url_for('lsu') }}" class="right">LSU</a>
-        <a href="{{ url_for('georgia') }}"class="right">Georgia</a>
-        <a href="{{ url_for('houston') }}" class="right">Houston</a>
-        <a href="{{ url_for('ohioState') }}" class="right">Ohio State</a>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}"class="left">College Football Dashboard</a></li>
+            <li><a href="{{ url_for('tennessee') }}" class="right">Tennessee</a></li>
+            <li><a href="{{ url_for('lsu') }}" class="right">LSU</a></li>
+            <li><a href="{{ url_for('georgia') }}"class="right">Georgia</a></li>
+            <li><a href="{{ url_for('houston') }}" class="right">Houston</a></li>
+            <li><a href="{{ url_for('ohioState') }}" class="right">Ohio State</a></li>
+        </ul>
     </div>
     <div class="team list"> <!-- middle page includes team image and name to click on -->
         <div class="Ohio State Buckeyes">
