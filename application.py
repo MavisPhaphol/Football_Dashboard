@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+import csv
 application = Flask(__name__)
 @application.route('/')
 def dashboard():
@@ -7,8 +7,15 @@ def dashboard():
 
 @application.route('/ohioState')
 def ohioState():
-    teamID=1
-    return render_template('ohioState.html')
+    team_id=1
+    players = []
+        with open('data/players.csv') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row["teamID"] == str(team_id):
+                players.append(row)
+    return render_template('ohioState.html', players=players)
 
 @application.route('/houston')
 def houston():

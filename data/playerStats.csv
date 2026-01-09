@@ -1,4 +1,4 @@
-playerID, gamesPlayed, passPercentage, completions, attempts, passingYards, passingTD, interceptions, rushingAttempts, rushingYards, rushingTD, receptions, recievingYards, recievingTD
+playerID,gamesPlayed,passPercentage,completions,attempts,passingYards,passingTD,interceptions,rushingAttempts,rushingYards,rushingTD,receptions,recievingYards,recievingTD
 1, 12, 65.8, 229, 348, 3170, 24, 6, 32, -65, 0, 0, 0, 0
 2, 10, 0, 0, 0, 0, 0, 0, 156, 926, 11, 19, 229, 0
 3, 12, 0, 0, 0, 0, 0, 0, 2, 26, 1, 67, 1211, 14
