@@ -8,34 +8,62 @@ def dashboard():
 @application.route('/ohioState')
 def ohioState():
     team_id=1
-    players = []
+    ohioStatePlayers = []
         with open('data/players.csv') as file:
         reader = csv.DictReader(file)
 
         for row in reader:
             if row["teamID"] == str(team_id):
-                players.append(row)
-    return render_template('ohioState.html', players=players)
+                ohioStatePlayers.append(row)
+    return render_template('ohioState.html', players=ohioStatePlayers)
 
 @application.route('/houston')
 def houston():
     teamID=2
-    return render_template('houston.html')
+    houstonPlayers = []
+        with open('data/players.csv') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row["teamID"] == str(team_id):
+                houstonPlayers.append(row)
+    return render_template('houston.html', players=houstonPlayers)
 
 @application.route('/georgia')
 def georgia():
     teamID=3
-    return render_template('georgia.html')
+    georgiaPlayers = []
+        with open('data/players.csv') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row["teamID"] == str(team_id):
+                georgiaPlayers.append(row)
+    return render_template('georgia.html', players=georgiaPlayers)
 
 @application.route('/lsu')
 def lsu():
     teamID=4
-    return render_template('lsu.html')
+    lsuPlayers = []
+        with open('data/players.csv') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row["teamID"] == str(team_id):
+                lsuPlayers.append(row)
+    return render_template('lsu.html', players=lsuPlayers)
 
 @application.route('/tennessee')
 def tennessee():
     teamID=5
-    return render_template('tennessee.html')
+    tennesseePlayers = []
+        with open('data/players.csv') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row["teamID"] == str(team_id):
+                tennesseePlayers.append(row)
+    return render_template('tennessee.html', players=tennesseePlayers)
 
 if __name__ == '__main__':
     application.run(debug=True)
